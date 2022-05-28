@@ -1,0 +1,138 @@
+html,body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: "BlakaHollow";
+    src: url("repo/Blaka_Hollow/BlakaHollow-Regular.ttf");
+  }
+  
+
+#main-container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+button{
+    color: white;
+    border: 1px solid #596D48;
+    background-color: #596D48;
+    padding: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 12px;
+}
+button:active {
+    transform: translateY(1px);
+}
+#image-sidebar{
+    background-image: url('repo/scott-webb-unsplash.jpg');
+    --sidebar-width: 40vw;
+    width: var(--sidebar-width);
+    height:100vh;
+    background-size: cover;
+}
+#image-credit{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+    font-family: "BlakaHollow";
+        
+}
+#image-credit a{
+    color: white;
+}
+#logo-bar{
+    background-color: rgb(0, 0, 0, 0.6);
+    width: auto;
+    height: 100px;
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#logo-bar img{
+    height: 100%;
+    width: auto;
+    opacity: 100%;
+}
+#logo-bar div{
+    font-family: "BlakaHollow";
+    color: white;
+    font-size: 50px;
+}
+
+#form-container{
+    background-color: white;
+    width: calc(100% - var(--sidebar-width) );
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.form-elements{
+    flex-grow: 1;
+    width: 100%;
+    border: 2px solid black;
+}
+#form-top {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ececec;
+}
+.form-elements p {
+    width: 60%;
+    font-family: "BlakaHollow";
+    font-size: 1.5rem;
+    font-style: bold;
+}
+#form-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+#form-bottom{
+    background-color: #ececec;
+    position: relative;
+}
+#form-bottom button, #form-bottom p{
+    position: relative;
+    top: 10px;
+    left: 150px;
+}
+#form{
+    display:flex;
+    flex-direction: row;
+}
+#form *{
+    margin: 5px;
+    position: relative;
+    left: -50px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: x-small;
+}
+input {
+    box-shadow:none;
+    border: 0;
+    outline:none;
+    border: 2px solid #E5E7EB;
+}
+input:focus{
+    border: 2px solid blue;
+    box-shadow: 4px 8px #888888;
+    outline:none;
+}
